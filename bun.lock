@@ -4,8 +4,6 @@
     "": {
       "name": "decleanup-network_backend",
       "dependencies": {
-        "@types/multer": "^1.4.12",
-        "@types/sharp": "^0.32.0",
         "@wagmi/core": "^2.16.5",
         "cors": "^2.8.5",
         "dotenv": "^16.4.7",
@@ -17,7 +15,7 @@
         "jsonwebtoken": "^9.0.2",
         "multer": "^1.4.5-lts.2",
         "pg": "^8.13.3",
-        "postgres": "^3.4.5",
+        "postgres": "^3.4.7",
         "sharp": "^0.33.5",
         "siwe": "^3.0.0",
         "twitter-api-v2": "^1.20.2",
@@ -29,7 +27,9 @@
         "@types/cors": "^2.8.17",
         "@types/express": "^5.0.0",
         "@types/jsonwebtoken": "^9.0.9",
+        "@types/multer": "^1.4.12",
         "@types/pg": "^8.11.11",
+        "@types/sharp": "^0.32.0",
       },
       "peerDependencies": {
         "typescript": "^5",
@@ -565,7 +565,7 @@
 
     "pgpass": ["pgpass@1.0.5", "", { "dependencies": { "split2": "^4.1.0" } }, "sha512-FdW9r/jQZhSeohs1Z3sI1yxFQNFvMcnmfuj4WBMUTxOrAyLMaTcE1aAMBiTlbMNaXvBCQuVi0R7hd8udDSP7ug=="],
 
-    "postgres": ["postgres@3.4.5", "", {}, "sha512-cDWgoah1Gez9rN3H4165peY9qfpEo+SA61oQv65O3cRUE1pOEoJWwddwcqKE8XZYjbblOJlYDlLV4h67HrEVDg=="],
+    "postgres": ["postgres@3.4.7", "", {}, "sha512-Jtc2612XINuBjIl/QTWsV5UvE8UHuNblcO3vVADSrKsrc6RqGX6lOW1cEo3CM2v0XG4Nat8nI+YM7/f26VxXLw=="],
 
     "postgres-array": ["postgres-array@3.0.2", "", {}, "sha512-6faShkdFugNQCLwucjPcY5ARoW1SlbnrZjmGl0IrrqewpvxvhSLHimCVzqeuULCbG0fQv7Dtk1yDbG3xv7Veog=="],
 

@@ -1,7 +1,8 @@
 import { z } from 'zod';
 import { config as dotenvConfig } from 'dotenv';
+import { join } from 'path';
 
-dotenvConfig();
+dotenvConfig({ path: join(process.cwd(), 'setup.env') });
 
 const configSchema = z.object({
     PORT: z.coerce.number().default(3000),

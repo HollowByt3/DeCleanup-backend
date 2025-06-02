@@ -1,6 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 
 declare module 'express' {
+    export function Router(): Router;
+    
     interface Router {
         get(
             path: string,

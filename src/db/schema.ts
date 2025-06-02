@@ -73,6 +73,16 @@ export const poiSubmissions = pgTable('poi_submissions', {
     updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
 
+// Leaderboard table schema
+export const leaderboard = pgTable('leaderboard', {
+    id: uuid('id').primaryKey().defaultRandom(),
+    user_id: uuid('user_id').notNull().references(() => users.id),
+    impact_level: integer('impact_level').notNull(),
+    points: integer('points').notNull(),
+    last_tx_hash: text('last_tx_hash'),
+    updated_at: timestamp('updated_at').defaultNow().notNull(),
+});
+
 // Define relationships and types
 export type User = typeof users.$inferSelect;
 export type NewUser = typeof users.$inferInsert;
